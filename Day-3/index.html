@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaning HTML - Day 3</title>
+    <link rel="shortcut icon" href="../images/sharigan.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HTML Links -->
+    <h2>HTML Links</h2>
+        <!-- HTML Links - Syntax -->
+            <i>Anchor Tag</i>
+            <p> use anchor(a) tag with href attribute.</p>
+            (a href="url") link text (a tag) <br> <br>
+            <a href="https://www.amazon.in/" target="_blank">Visit Amazon</a> <br> <br>
+        <!-- The target Attribute -->
+            <i>Target attribute</i> <br>
+            <br>
+            <b>The target attribute specifies where to open the linked document. _self, _blank, _parent, _top</b> <br> <br>
+        <!-- Use an Image as a Link -->
+            <i>Image as a link</i> <br> <br>
+            <a href="https://www.flipkart.com" target="_blank" title="Flipkart">
+            <img src="../images/smiley.jpg" alt="Visit Flipkart" style="width:42px;height:42px;">
+            </a> <br><br>
+        <!-- Link to an Email Address -->
+            <i>Link an Email Address</i> <br> <br>
+            <b>Use mailto: inside the href attribute to create a link that opens the user's email</b>
+            <a href="mailto:d.arknight2.0.709@gmail.com">Send email</a> <br> <br>
+        <!-- Button as a Link -->
+            <i>Button as a link</i> <br><br>
+            <b>To use an HTML button as a link, you have to add some JavaScript code.</b>
+            <button onclick="document.location='https://www.w3schools.com/html/'">HTML Tutorial</button> <br> <br>
+        <!-- Link Titles -->
+            <i>Link Title</i> <br> <br>
+            <b>The title attribute specifies extra information about an element.</b>
+            <a href="https://www.w3schools.com/css/" title="Go to W3Schools CSS section">Visit our CSS Tutorial</a> 
+            <hr>
+
+    <!-- HTML Images -->
+    <h2>HTML Image</h2>
+    <img src="../images/alone.jpg" alt="Alone Picture view" style="width: 300px; height: 200px;"> <br> <br>
+    <!-- Animated Image -->
+        <i>Animated Images</i> <br><br>
+        <img src="../images/programming.gif" alt="Computer Man" style="width: 250px;height:140px;"> <br><br>
+    <!-- Image Maps -->
+        <i>image mapes</i> <br><br>
+        <img src="../images/computer.jpg" alt="Workplace" usemap="#workmap" >
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://en.wikipedia.org/wiki/Computer">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://en.wikipedia.org/wiki/Telephone">
+            <area shape="circle" coords="337,300,44" alt="Coffee" href="https://en.wikipedia.org/wiki/Coffee">
+        </map>
+    <!-- HTML Background Images -->
+    <h3 style="background-image: url('../images/flower.png');">Background Images</h3>
+
+    <!-- HTML Picture Element -->
+    <h2>Picture Element</h2>
+    <picture>
+        <source media="(min-width: 650px)" srcset="../images/bugati-1.png">
+        <source media="(min-width: 465px)" srcset="../images/bugati-2.jpg">
+        <img src="../images/girl.jpg" alt="car&girl Image"style="width: 400px;">
+    </picture>
+
+    <!-- HTML Favicon -->
+    <h2>Favicon</h2>
+    <p>A favicon is a small image displayed next to the page title in the browser tab.</p>
+    <p>add a link element to your "index.html" file, after the title element in head section.</p>
+
+    <!-- HTML Page Title -->
+    <h2>HTML Page Title</h2>
+    <p>Every web page should have a page title to describe the meaning of the page.</p>
+    <p>The title element adds a title to your page.</p>
+    <hr>
+</body>
+</html>

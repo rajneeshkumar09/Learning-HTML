@@ -1,0 +1,57 @@
+body {
+    background-color: powderblue;
+}
+
+h2 {
+    color: rgb(212, 83, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    margin: 30px;
+}
+
+h3 {
+    color: hotpink;
+    /* height: 200px; */
+    font-size: 80px;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: 100% 100%;
+}
+
+i {
+    color: rgb(5, 145, 75);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border: 2px solid rgb(219, 38, 219);
+    padding: 1.5px;
+    margin: 5px;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(107, 107, 233);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+button:hover {
+    color: aqua;
+    background-color: rgb(255, 72, 72);
+}

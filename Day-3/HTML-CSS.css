@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(165, 234, 216);
+}
+h2 {
+    color: rgb(212, 83, 8);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 200%;
+    margin: 30px;
+}
+i {
+    color: rgb(5, 145, 75);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 160%;
+    border: 2px solid rgb(219, 38, 219);
+    padding: 15px;
+    margin: 50px;
+}
