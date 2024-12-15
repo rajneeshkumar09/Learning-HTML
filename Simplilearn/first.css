@@ -1,0 +1,31 @@
+img{
+    width: 400px;
+    height: 200px;
+}
+
+caption{
+    background: #ad9a6d;
+    color: rgb(5, 79, 26);
+}
+
+table, tr, td, th{
+    border: 1px solid black;
+    border-color: rgb(87, 2, 97);
+    border-width: 2px;
+}
+
+iframe{
+    width: 500px;
+    height: 300px;
+    border: 3px solid rgb(75, 147, 2);
+}
+
+#cars{
+    color: blue;
+    border: 2px solid silver;
+}
+
+#bikes{
+    color: red;
+    border: 2px solid green;
+}
