@@ -22,10 +22,16 @@ iframe{
 
 #cars{
     color: blue;
-    border: 2px solid silver;
+    border: 2px solid brown;
+    background-color: deepskyblue;
+    border-radius: 12px;
 }
 
 #bikes{
     color: red;
     border: 2px solid green;
+    border-radius: 12px;
+    background-image: url("../images/sea.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }

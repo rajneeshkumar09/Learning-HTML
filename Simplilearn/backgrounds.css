@@ -1,0 +1,38 @@
+body{
+    /* background-color: rgb(73, 73, 247);  /*156 */ 
+    background-image: url("../images/ferrari\ j50.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cars{
+    border: 3px solid silver;
+    border-radius: 10px;
+    color: rgb(163, 42, 165);
+    background-color: rgb(59, 224, 224);
+    border-bottom-color: chartreuse;
+    border-right-color: chocolate;
+    border-top-color: salmon;
+    border-left-color: gold;
+}
+
+#bikes{
+    border: 3px solid silver;
+    border-radius: 10px;
+    color: rgb(154, 44, 11);
+    background-image: url("../images/sea.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#colours{
+    border: 3px solid gray;
+    border-radius: 15px;
+    background-color: rgb(204, 185, 162);
+    border-top-color: blueviolet;
+    border-bottom-color: chartreuse;
+    border-left-color: coral;
+    border-right-color: darkorange;
+    color: rgb(164, 84, 4);
+}
