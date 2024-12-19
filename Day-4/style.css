@@ -1,0 +1,72 @@
+body{
+    background-color: bisque;
+    background-size: cover;
+}
+
+table, th, td {
+    background-color: #8ad1d0;
+    border-radius: 8px;
+    border: 2px solid rgb(237, 142, 86);
+    border-color: brown;
+}
+
+img{
+    width: 500px;
+    margin-left: 35px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.mycontainer {
+    width:30%;
+    /* margin:auto; */
+    display: inline-block;
+    background-color: burlywood;
+}
+
+.city {
+    background-color: tomato;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+#myHeader {
+    background-color: lightblue;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+iframe{
+    height: 300px;
+    width: 600px;
+    margin-left: 6%;
+    border: 2px solid red;
+}
+
+#HR_CSS ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+#HR_CSS li {
+    float: left;
+}
+
+#HR_CSS li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+}
+
+#HR_CSS li a:hover {
+    background-color: #111111;
+}

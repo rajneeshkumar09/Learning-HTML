@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaning HTML - Day 4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../images/sharigan.png" type="image/x-icon">
+</head>
+<body>
+    <!-- HTMLTables -->
+    <h2>HTML Table</h2>
+    <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+    <h3>Table cells, rows & headers</h3>
+    <ul>
+        <li>Using td tag, create table cells, stands for table data</li>
+        <li>Using tr tag, create table rows, stands for table row</li>
+        <li>Using th tag, create table header, stands for table head, by defualt: th element are <u>bold and centered</u></li>
+    </ul>
+    <h3>thead, tbody & thead elements</h3>
+    <ul>
+        <li>thead : Groups of header content in a table</li>
+        <li>tbody : Groups of body content in a table</li>
+        <li>tfoot : Groups of footer content in a table</li>
+    </ul>
+    <h3>HTML Table Borders</h3>
+    <ul>
+        <li>To add a border, use the CSS border property on table, th, and td elements.
+        <li>To avoid having double borders, use border-collapse property to collapse.</li>
+        <li>To add color in each cell, use background-color property.</li>
+        <li>To make table borders rounds, use border-radius property.</li>
+    </ul>
+    <h3>HTML Table Size</h3>
+    
+    <table>
+        <tr>
+            <th>Person 1</th>
+            <th>Person 2</th>
+            <th>Person 3</th>
+        </tr>
+        <tr>
+            <td>Emil</td>
+            <td>Tobias</td>
+            <td>Linus</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>14</td>
+            <td>10</td>
+        </tr>
+    </table>
+    <hr>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+    <hr>
+    <table style="width:100%">
+        <tr>
+            <th style="width:70%">Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+    <hr>
+    <table style="width:100%">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr style="height:100px">
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+    <hr>
+
+    <!-- HTML Lists -->
+    <h3>HTML Lists</h3>
+    <p><li>HTML lists allow web developers to group a set of related items in lists.</li></p>
+    <p><li>To organize content, create ordered and unordered lists using &lt;ol&gt; and &lt;ul&gt; tags. Each list item starts with the &lt;li&gt; tag.</li></p>
+    <img src="../images/List_type.png" alt="List Types Image">
+
+    <h4>Unordered HTML List</h4>
+    <ul style="list-style-type:square;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <ul>
+            <li>Black Tea</li>
+            <li>Green Tea</li>
+        </ul>
+        <li>Milk</li>
+    </ul>
+
+    <h4>Ordered HTML List</h4>
+    <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <ol start="10">
+            <li>Black Tea</li>
+            <li>Green Tea</li>
+        </ol>
+        <li>Milk</li>
+    </ol>
+
+    <h4>HTML Description Lists</h4>
+    <div>
+        <ul>
+            <li>HTML also supports description lists.</li>
+            <li>A description list is a list of terms, with a description of each term.</li>
+            <li>The &lt;dl&gt; tag defines the description list.</li>
+            <li>The &lt;dt&gt; tag defines the term(name).</li>
+            <li>The &lt;dd&gt; tag describes each term.</li>
+        </ul>
+
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+    </div>
+
+    <div>
+        <ul id="HR_CSS">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div> <br><br>
+    <hr>
+    <!-- HTML Block & Inline -->
+    <h3>Block-level Elements</h3>
+    <p>Block elements start on a new line and take up the entire width. like : &lt;div&gt;, &lt;p&gt;, &lt;h1&gt;</p>
+    <p>Here are the block-level elements in HTML:</p>
+    <img src="../images/block.png" alt="Block Element">
+
+    <h3>Inline Elements</h3>
+    <span><li>Inline elements only take up as much space as needed. like : &lt;span&gt;, &lt;a&gt;, &lt;img&gt;</li></span> <br>
+    <span><li>Here are the inline elements in HTML:</li></span> <br>
+    <img src="../images/inline.png" alt="Inline Element"> <hr>
+
+    <!-- HTML div -->
+    <h3>Div Tag</h3>
+    <p><li>The &lt;div&gt; element is used as a container for other HTML elements.</li></p>
+    <p><li>The &lt;div&gt; element has no required attributes, but style, class and id are common.</li></p>
+
+    <div class="mycontainer">
+        <h2>London</h2>
+        <p>London is the capital city of England.</p>
+        <p>London has over 13 million inhabitants.</p>
+    </div>
+    <div class="mycontainer">
+        <h2>Oslo</h2>
+        <p>Oslo is the capital city of Norway.</p>
+        <p>Oslo has over 600.000 inhabitants.</p>
+    </div>
+    <div class="mycontainer">
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.</p>
+        <p>Rome has almost 3 million inhabitants.</p>
+    </div> <hr>
+
+    <!-- HTML class & id Attributes -->
+    <h3>HTML class & id Attributes</h3>
+    <p><li>Classes (class) : Used to apply the same style to multiple elements. Used period(.) before class name and properties within curly-braces {}</li></p>
+    <p><li>IDs (id) : A unique identifier for a single element. use a hash chacter(#) before id name and properties within curly-braces{}.</li></p>
+
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>      
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <h3>Use of The class Attribute in JavaScript</h3>
+    <p><li>JavaScript can access elements with a specific class name with the getElementsByClassName() method.</li></p>
+
+    <h1 id="myHeader">Use of Id Attribute</h1>
+    <h3>Using The id Attribute in JavaScript</h3>
+    <p><li>JavaScript can access an element with a specific id with the getElementById() method.</li></p>
+    <button onclick="displayResult()">Change text</button>
+
+    <!-- HTML Iframes -->
+    <h3>HTML Iframes</h3>
+    <p><li>An HTML iframe is used to display a web page within a web page.</li></p>
+    <iframe src="../Day-3/index.html" frameborder="0" title="Day 3 Learning" name="iframe_a">Day 3</iframe>
+    <p><a href="../Day-4/index.html" target="iframe_a">Day 4 Learning</a></p> <hr>
+
+    <script src="./script.js">File</script>
+</body>
+</html>

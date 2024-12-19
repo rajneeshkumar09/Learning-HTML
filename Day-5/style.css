@@ -1,0 +1,21 @@
+body {
+    background-color: powderblue;
+}
+
+h1, h3 {
+    color: red;
+}
+
+p {
+    color: blue;
+}
+
+#filePath img{
+    height: 300px;
+    width: 600px;
+}
+
+#layout div{
+    width: 50%;
+    float: left;
+}
