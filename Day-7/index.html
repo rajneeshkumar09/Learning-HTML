@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/sharigan.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Learning HTML - Day 7</title>
+</head>
+<body>
+    <div>
+        <div id="formdata">
+            <!-- HTML Forms -->
+            <div>
+                <h2>HTML Forms</h2>
+                <ul>
+                    <li>An HTML form is used to collect user input.</li>
+                    <li>The user input is most often sent to a server for processing.</li>
+                </ul>
+
+                <h3>The <b>&lt;form&gt;</b> Element</h3>
+                <ul>
+                    <li>The HTML <b>&lt;form&gt;</b> element is used to create an HTML form for user input.</li>
+    <pre>
+        &lt;from&gt;
+            form elements
+        &lt;&#47from&gt;
+    </pre>
+                    <li>The <b>&lt;form&gt;</b> element is a container for different types of input elements. Like : </li>
+                    <ul>
+                        <li>&lt;input&gt;</li>
+                        <li>&lt;label&gt;</li>
+                        <li>&lt;select&gt;</li>
+                        <li>&lt;textarea&gt;</li>
+                        <li>&lt;button&gt;</li>
+                        <li>&lt;fieldset&gt;</li>
+                        <li>&lt;legend&gt;</li>
+                        <li>&lt;datalist&gt;</li>
+                        <li>&lt;output&gt;</li>
+                        <li>&lt;option&gt;</li>
+                        <li>&lt;optgroup&gt;</li>
+                    </ul>
+                </ul>
+
+                <h3>The &lt;input&gt; Element</h3>
+                <ul>
+                    <li>The HTML <b>&lt;input&gt;</b> element is the most used form element.</li>
+                    <li>An <b>&lt;input&gt;</b> element can be displayed in many ways, depending on the <mark>type</mark> attribute.</li>
+                    <img src="../images/input_type.png" alt="Input Type Image" width="400px">
+                    <h4>Text Fields</h4>
+                    <li>The <b>&lt;input type="text"&gt;</b> defines a single-line input field for text input.</li>
+                </ul>
+                <h3>The <b>&lt;label&gt; Element</b></h3>
+                <ul>
+                    <li>The <b>&lt;label&gt;</b> tag defines a label for many form elements.</li>
+                    <li>The <b>&lt;label&gt;</b>  element is useful for screen-reader users.</li>
+                    <li>The <mark>for</mark> attribute of the <b>&lt;label&gt;</b> tag should be equal to the id attribute of the <b>&lt;input&gt;</b> element to bind them together.</li>
+
+                    <h4>Radio Buttons</h4>
+                    <li>The <b>&lt;input type="radio"&gt;</b> defines a radio button.</li>
+                    <li>Radio button let a user select ONE of a limited number of choices.</li>
+
+                    <h4>Checkboxes</h4>
+                    <li>The <b>&lt;input type="checkbox"&gt;</b> defines a <b>checkbox.</b></li>
+
+                    <h3>The Submit Button</h3>
+                    <li>The <b>&lt;input type="submit"&gt;</b> defines a button for submitting the form data to a form handler.</li>
+                    <li>The form-handler is specified in the form's <mark>action</mark> attribute</li>
+                </ul>
+
+                <h4>Name Attribute for &lt;input&gt;</h4>
+                <li>Each input field must have a <mark>name</mark> attribute to be submitted.</li>
+
+                <h2>&lt;select&gt; Element</h2>
+                <ul>
+                    <li>The <b>&lt;select&gt; </b>element defines a drop-down list.</li>
+                    <li><h3>&lt;option&gt; Element</h3></li>
+                    <ul>
+                        <li>The <b>&lt;option&gt;</b> element defines an option that can be selected.</li>
+                        <li>To define a pre-selected option, add the <mark>selected</mark> attribute to the option.</li>
+                        <li><h4>Visible Values : </h4></li>
+                        <ul><li>Use the <mark>size</mark> attribute to specify the number of visible values.</li></ul>
+                        <li><h4>Allow multiple Selections : </h4></li>
+                        <ul><li>Use the <mark>multiple</mark> attribute to allow the user to select more than one value.</li></ul>
+                    </ul>
+                </ul>
+
+                <h2>&lt;textarea&gt; Element</h2>
+                <ul>
+                    <li>The <b>&lt;textarea&gt;</b> element defines a multi-line input field (a text area).</li>
+                    <li>The <mark>rows</mark> attribute specifies the visible number of lines in a text area.</li>
+                    <li>The <mark>cols</mark> attribute specifies the visible width of a text area.</li>
+                </ul>
+
+                <h2>&lt;button&gt; Element</h2>
+                <ul>
+                    <li>The &lt;button&gt; element defines a clickable button</li>
+                </ul>
+
+                <h2>&lt;fieldset&gt; and &lt;legend&gt; Elements</h2>
+                <ul>
+                    <li>The &lt;fieldset&gt; element is used to group related data in a form.</li>
+                    <li>The &lt;legend&gt; element defines a caption for the &lt;fieldset&gt; element.</li>
+                </ul>
+
+                <h2>&lt;datalist&gt; Element</h2>
+                <ul>
+                    <li>The &lt;datalist&gt; element specifies a list of pre-defined options for an &lt;input&gt; element.</li>
+                    <li>The <mark>list</mark> attribute of the &lt;input&gt; element, must refer to the <mark>id</mark> attribute of the &lt;datalist&gt; element.</li>
+                </ul>
+
+                <h2>&lt;output&gt; Element</h2>
+                <ul>
+                    <li>The &lt;output&gt; element represents the result of a calculator.</li>
+                </ul>
+            </div>
+
+            <!-- The Action Attribute -->
+            <div>
+                <h2>HTML Form Attributes</h2>
+                <h3>Action Attribute</h3>
+                <ul>
+                    <li>The <mark>action</mark> attribute defines the action to be performed when the form is submitted.</li>
+                    <li>The form data is sent to a file on the server when the user clicks on the submit button.</li>
+                </ul>
+                <h3>Target Attribute</h3>
+                <ul>
+                    <li>The <mark>target</mark> attribute specifies where to display the response that is received after submitting the form.</li>
+                    <li>_blank : The response is displayed in a new window or tab</li>
+                    <li>_self : The response is displayed in the current window</li>
+                    <li>_parent : The response is displayed in the parent frame</li>
+                    <li>_top : The response is displayed in the full body of the window</li>
+                    <li>framename : The response is displayed in a named iframe</li>
+                </ul>
+                <h3>Method Attribute</h3>
+                <ul>
+                    <li>The <mark>method</mark> attribute specifies the HTTP method to be used when submitting the form data.</li>
+                    <li>The form-data can be sent as URL variables (with <mark>method="get"</mark>) or as HTTP post transaction (with <mark>method="post"</mark>).</li>
+                    <li>Always use POST if the form data contains sensitive or personal information!</li>
+                </ul>
+
+                <h3>Autocomplete Attribute</h3>
+                <ul>
+                    <li>The <mark>autocomplete</mark> attribute specifies whether a form should have autocomplete on or off.</li>
+                    <li>When autocomplete is on, the browser automatically complete values based on values that the user has entered before.</li>
+                </ul>
+                <h3>Novalidate Attribute</h3>
+                <ul>
+                    <li>The <mark>novalidate</mark> attribute is a boolean attribute.</li>
+                    <li>When present, it specifies that the form-data (input) should not be validated when submitted.</li>
+                </ul>
+                <img src="../images/form_attribute.png" alt="Form Attribute Image" width="700px" height="400px">
+            </div>
+
+            <div>
+                <h3>HTML Form Elements</h3>
+
+            </div>
+        </div>
+
+        <div id="formExample">
+            <form action="#" target="_blank">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"> <br> <br>
+
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label> <br><br>
+
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label> <br><br>
+
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+
+        <div id="formAttributeExample">
+            <form action="#">
+                <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars" size="3" multiple>
+                    <option value="volvo" selected>Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="audi">Audi</option>
+                </select> <br>
+
+                <textarea name="message" rows="10" cols="30">
+                    The cat was playing in the garden.
+                </textarea> <br>
+
+                <button type="button" onclick="alert('Hello World!')">Click Me!</button> <br>
+
+                <form action="/action_page.php">
+                    <fieldset>
+                        <legend>Personalia:</legend>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <input type="submit" value="Submit">
+                    </fieldset>
+                </form> <br>
+
+                <form action="/action_page.php">
+                    <input list="browsers" placeholder="select browser">
+                    <datalist id="browsers">
+                        <option value="Edge">
+                        <option value="Firefox">
+                        <option value="Chrome">
+                        <option value="Opera">
+                        <option value="Safari">
+                    </datalist>
+                </form><br>
+
+                <form action="/action_page.php"
+                    oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+                    0
+                    <input type="range"  id="a" name="a" value="50">
+                    100 +
+                    <input type="number" id="b" name="b" value="50">
+                    =
+                    <output name="x" for="a b"></output>
+                    <br><br>
+                    <input type="submit">
+                </form>
+            </form>
+        </div>
+
+        <div id="inputType">
+            <h3>HTML Input Types</h3>
+            <ul>
+                <li>&lt;input type="button"&gt; : Defines a button</li>       
+                <li>&lt;input type="checkbox"&gt;</li>   
+                <ul>
+                    <li>Defines a checkbox.</li>
+                    <li>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</li>
+                </ul>    
+                <li>&lt;input type="color"&gt; :  Used for input fields that should contain a color.</li>       
+                <li>&lt;input type="date"&gt; : Used for input fields that should contain a date.</li>   
+                <li>&lt;input type="datetime-local"&gt; : Specifies a date and time input field, with no time zone.</li>   
+                <li>&lt;input type="email"&gt; : Used for input fields that should contain an e-mail address.</li>   
+                <li>&lt;input type="file"&gt; : Defines a file-select field and a "Browse" button for file uploads.</li>   
+                <li>&lt;input type="hidden"&gt; : Defines a hidden input field (not visible to a user or modified by user).</li>       
+                <li>&lt;input type="image"&gt;</li>       
+                <ul>
+                    <li>Defines an image as a submit button.</li>
+                    <li>The path to the image is specified in the src attribute.</li>
+                </ul>
+                <li>&lt;input type="month"&gt; : Allows the user to select a month and year.</li>   
+                <li>&lt;input type="number"&gt;</li>   
+                <ul>
+                    <li>Defines a numeric input field.</li>
+                    <li>You can also set restrictions on what numbers are accepted.</li>
+                    <h3>Input Restrictions</h3>
+                    <img src="../images/input_restriction.png" alt="Input Restriction" width="600px" height="350px">
+                </ul>
+                <li>&lt;input type="password"&gt; For <b>password field.</b></li>   
+                <li>&lt;input type="radio"&gt; : Defines a radio button.</li>   
+                <li>&lt;input type="range"&gt;</li>  
+                <ul>
+                    <li>Defines a control for entering a number whose exact value is not important (like a slider control).</li>
+                    <li>Default range is 0 to 100.</li>
+                    <li>you can set restrictions on what numbers are accepted with the <mark>min, max,</mark> and <mark>step</mark> attributes</li>
+                </ul>     
+                <li>&lt;input type="reset"&gt; : Defines a <b>reset button</b> that will reset all form values to their default values.</li>           
+                <li>&lt;input type="search"&gt; : Used for search fields.</li>       
+                <li>&lt;input type="submit"&gt;</li> 
+                <ul>
+                    <li>Defines a button for <b>submitting</b> form data to a <b>form-handler</b>.</li>
+                    <li>The form-handler is specified in the form's <mark>action</mark> attribute</li>
+                </ul>          
+                <li>&lt;input type="tel"&gt; Used for input fields that should contain a telephone number.</li>   
+                <li>&lt;input type="text"&gt; : For a <b>single-line text input field.</b></li>   
+                <li>&lt;input type="time"&gt; : Ullows the user to select a time (no time zone).</li>   
+                <li>&lt;input type="url"&gt; : Used for input fields that should contain a URL address.</li>   
+                <li>&lt;input type="week"&gt; : Allows the user to select a week and year.</li>   
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li>value Attribute</li>
+                <li>randomly Attribute</li>
+                <li>disabled Attribute</li>
+                <li>size Attribute</li>
+                <li>maxlength Attribute</li>
+                <li>min & max Attribute</li>
+                <li>multiple Attribute</li>
+                <li>pattern Attribute</li>
+                <li>placeholder Attribute</li>
+                <li>required Attribute</li>
+                <li>step Attribute</li>
+                <li>autofocus Attribute</li>
+                <li>height & width Attribute</li>
+                <li>list Attribute</li>
+                <li>autocomplete Attribute</li>
+
+                <h3>Input form* Attribute</h3>
+                <li>form Attribute</li>
+                <li>formaction Attribute</li>
+                <li>formenctype Attribute</li>
+                <li>formmethod Attribute</li>
+                <li>formtarget Attribute</li>
+                <li>formnovalidate Attribute</li>
+                <li>novalidate attribute</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

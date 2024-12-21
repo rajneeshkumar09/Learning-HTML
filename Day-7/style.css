@@ -1,0 +1,71 @@
+body{
+    background-color: #66e0c4;
+    background-size: cover;
+    /* box-sizing: border-box; */
+    font-size: 16px;
+}
+
+ol, ul{
+    color: DFD7BF;
+    display: inline-block;
+    background-color: 3F2305;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 25px 10px;
+    letter-spacing: 2px;
+}
+
+
+#loginform{
+    color: #f4a946;
+    margin:15px 65px;
+    padding: 25px;
+    border: 3px solid #004226;
+    word-spacing: 5px;
+    background-color: #bb5756;
+    border-radius: 10px;
+}
+
+#loginform form input[type="text"],input[type="Password"],input[type="email"],input[type="number"],input[type="date"],input[type="course"],input[type="range"],input[type="file"],input[type="search"],select{
+    margin:8px 100px;
+    background-color: #68e2da;
+    box-sizing: content-box;
+    border: 2.5px solid rgb(8, 79, 185);
+    border-radius: 12px;
+    color: black;
+    width: 50%;
+    padding: 8px;
+}
+
+#loginform label{
+    display: block;
+    font-weight: bold;
+    margin-left: 60px;
+} 
+
+#loginform form p{
+    margin-left: 18%;
+}
+
+#loginform textarea {
+    width: 50%;
+    height: 12%;
+    max-height: 300px;
+    max-width: 600px;
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    margin:8px 100px;
+    background-color: #68e2da;
+    box-sizing: content-box;
+    border: 2.5px solid rgb(8, 79, 185);
+}
+
+button{
+    color: white;
+    background-color: rgb(149, 6, 164);
+    border: 3px solid silver;
+    border-radius: 12px;
+    padding: 8px;
+    margin: 20px 55px 0px;
+} 

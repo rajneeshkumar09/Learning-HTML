@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../images/sharigan.png">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML Form</title>
+</head>
+<body>
+    <div id="loginform">
+        <h1 class="headings">Form tag and type Attribute </h1>
+        <li>This section includes implementation of form tag and it's Type attribute.</li>
+        <li>input, lable,button tags are used to create a form inside &lt;form&gt; tag.</li> <br>
+        <form action="_blank">
+            <label for="name">Enter First Name : </label>
+            <input type="text" name="name" id="name" alt="FirstName" placeholder="First Name" required>
+            <label for="name">Enter Middle Name : </label>
+            <input type="text" name="name" id="name" alt="MiddleName" placeholder="Middle Name">
+            <label for="name">Enter Last Name : </label>
+            <input type="text" name="name" id="name" alt="LastName" placeholder="Last Name"required>
+            <label for="userid">Enter User Id : </label>
+            <input type="text" name="name" id="userid" alt="UserId" placeholder="User Id" required>
+            <label for="password">Enter Password : </label>
+            <input type="password" name="name" id="password" alt="Enter your password" placeholder="password" required>
+            <label for="email">Enter Email : </label>
+            <input type="email" name="email" id="email" alt="Email" placeholder="Email" required>
+            <label for="number">Enter Phone Number : </label>
+            <input type="number" name="number" id="number" alt="Enter your numer" placeholder="Number" required>
+            <label for="dob">Enter DOB : </label>
+            <input type="date" name="dob" id="dob" alt="DOB" placeholder="dd/mm/yyyy" required>
+            <label for="course">Select your Course : </label>
+            <select name="course" id="course">
+                <option value="Course">Course</option>
+                <option value="BCA">BCA</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="MCA">MCA</option>
+                <option value="M.Tech">M.Tech</option>
+                <option value="others">Others</option>
+            </select>
+            <label for="ManualCourse">Type Your Course Manually : 
+            </label>
+            <input type="course" name="ManualCourse" placeholder="Your Course">
+            <label for="gender">Select Gender :  </label>
+            <p>
+                <input type="radio" id="male" name="gender" value="male"> Male <br>
+                <input type="radio" id="female" name="gender" value="female"> Female</p>
+            <label for="rate">Rate us 1 to 10 : </label>
+            <input type="range" name="rate" id="rate" min="1" max="10">
+            <label for="resume">Upload Your latest Resume : </label>
+            <input type="file" name="resume" id="resume" required>
+            <label for="query">Any Suggestion : </label>
+            <textarea name="query" id="query" placeholder="Type your Thoughts"></textarea> <br>
+            <button>Submit Your Details</button>
+        </form> 
+    </div>
+</body>
+</html>
